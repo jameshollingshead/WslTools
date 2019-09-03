@@ -1,0 +1,7 @@
+#!/bin/bash
+
+drive_letter=$1
+drive_letter=${drive_letter^^}
+
+mount_folder="/mnt/${drive_letter,,}"
+sudo mount -t drvfs ${drive_letter}: ${mount_folder}

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+drive_letter=$1
+mount_folder="/mnt/${drive_letter,,}"
+
+sudo umount ${mount_folder}
